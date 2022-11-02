@@ -1,8 +1,9 @@
 function checkPrime(num){
 let counter=0;
-for(let i=0;i<=num;i++){
+for(let i=1;i<=num;i++){
 if(num%i==0){
 counter++;
+}
 }
 if(counter==2){
 return true;
@@ -12,6 +13,7 @@ return true;
 
 let num=13;
 let ans=checkPrime(num);
+
 if(ans==true){
 console.log('Prime Number');
 }else{
