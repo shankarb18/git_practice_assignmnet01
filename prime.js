@@ -4,5 +4,16 @@ for(let i=0;i<=num;i++){
 if(num%i==0){
 counter++;
 }
+if(counter==2){
+return true;
 }
-console.log(num);
+ return false;
+}
+
+let num=13;
+let ans=checkPrime(num);
+if(ans==true){
+console.log('Prime Number');
+}else{
+console.log('Not Prime Number')
+}
